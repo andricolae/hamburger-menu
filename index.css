@@ -125,6 +125,17 @@ body {
 @media (max-width: 768px) {
     .hamburger-menu {
         display: block;
+        font-size: 2rem;
+        padding-right: 30px;
+        position: relative;
+        z-index: 1001;
+    }
+
+    .navbar {
+        position: relative;
+        z-index: 1000;
+        width: 100%;
+        overflow: visible;
     }
 
     #menu {
@@ -136,7 +147,6 @@ body {
 
     #menu.active {
         display: flex;
-        flex-direction: column;
     }
 
     #menu li {
@@ -144,8 +154,7 @@ body {
     }
 
     #menu li a {
-        padding: 15px;
-        border-bottom: 1px solid #ddd;
+        padding: 5px;
     }
 
     .submenu {
@@ -154,5 +163,10 @@ body {
 
     .sub-submenu {
         position: static;
+    }
+
+    #menu li ul.submenu li:hover ul.sub-submenu {
+        display: block;
+        left: 180px;
     }
 }
