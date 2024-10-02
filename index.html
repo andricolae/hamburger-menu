@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hamburger Menu</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <img src="logo.png" alt="">
+            </div>
+            <div class="hamburger-menu" onclick="toggleMenu()">
+                &#9776;
+            </div>
+            <ul id="menu">
+                <li><a href="#element1">ELEMENT 1</a>
+                    <ul class="submenu">
+                        <li><a href="#subelement1">subelement 1</a>
+                            <ul class="sub-submenu">
+                                <li><a href="#subelement1-1">element 1.1</a></li>
+                                <li><a href="#subelement1-2">element 1.2</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#subelement2">subelement 2</a>
+                            <ul class="sub-submenu">
+                                <li><a href="#subelement1-1">element 2.1</a></li>
+                                <li><a href="#subelement1-2">element 2.2</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="#element2">ELEMENT 2</a></li>
+                <li><a href="#element3">ELEMENT 3</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById('menu');
+            menu.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
