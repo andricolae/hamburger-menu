@@ -12,7 +12,7 @@
             <div class="logo">
                 <img src="logo.png" alt="">
             </div>
-            <div class="hamburger-menu" onclick="toggleMenu()">
+            <div class="hamburger-menu" aria-expanded="false" onclick="toggleMenu()">
                 &#9776;
             </div>
             <ul id="menu">
@@ -38,11 +38,6 @@
         </div>
     </header>
 
-    <script>
-        function toggleMenu() {
-            const menu = document.getElementById('menu');
-            menu.classList.toggle('active');
-        }
-    </script>
+    <script src="index.js"></script>
 </body>
 </html>

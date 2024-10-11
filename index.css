@@ -74,7 +74,7 @@ body {
     padding: 2px 0;
 }
 
-#menu li ul.submenu li a, 
+#menu li ul.submenu li a,
 #menu li ul.sub-submenu li a {
     padding: 4px 8px;
     margin-bottom: 1px;
@@ -159,14 +159,28 @@ body {
 
     .submenu {
         position: static;
+        padding-left: 20px;
     }
 
     .sub-submenu {
         position: static;
+        padding-left: 40px;
+        display: none;
     }
 
     #menu li ul.submenu li:hover ul.sub-submenu {
         display: block;
         left: 180px;
+    }
+
+    .submenu li a {
+        padding: 10px;
+        background-color: var(--submenu-background);
+    }
+
+    .sub-submenu li a {
+        padding: 10px;
+        background-color: var(--hover-color);
+        color: var(--background-color);
     }
 }
